@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Chirani/repos/CppTutorials/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\a.dir\\CompilationProcess.cpp.obj -c \"C:\\Users\\Chirani\\repos\\CppTutorials\\Compilation & Build\\CompilationProcess.cpp\"",
+  "file": "C:/Users/Chirani/repos/CppTutorials/Compilation & Build/CompilationProcess.cpp",
+  "output": "CMakeFiles/a.dir/CompilationProcess.cpp.obj"
+},
+{
+  "directory": "C:/Users/Chirani/repos/CppTutorials/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\a.dir\\math_utils.cpp.obj -c \"C:\\Users\\Chirani\\repos\\CppTutorials\\Compilation & Build\\math_utils.cpp\"",
+  "file": "C:/Users/Chirani/repos/CppTutorials/Compilation & Build/math_utils.cpp",
+  "output": "CMakeFiles/a.dir/math_utils.cpp.obj"
+}
+]

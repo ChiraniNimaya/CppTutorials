@@ -1,0 +1,10 @@
+^C:\USERS\CHIRANI\REPOS\CPPTUTORIALS\COMPILATION & BUILD\BUILD\CMAKEFILES\5121A5E43CEC6F87CB9C67950D460621\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Chirani/repos/CppTutorials/Compilation & Build" "-BC:/Users/Chirani/repos/CppTutorials/Compilation & Build/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Chirani/repos/CppTutorials/Compilation & Build/build/firstcmakeproject.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

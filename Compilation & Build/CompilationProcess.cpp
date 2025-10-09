@@ -1,12 +1,26 @@
 //01 - Source Code
-#include <iostream>
+#include <iostream> // The '<' and '>' brackets tell the compiler to look for the file in the standard directory
 #include <memory>
-#include "math_utils.h"
+#include "math_utils.h" // double quotes ( " " ) tell the compiler to search for the header file in the source file's directory
+
+//So the Compile Command should be corrected like below:
+    // g++ CompilationProcess.cpp math_utils.cpp -o a
+    // ./a.exe
+
 
 int main()
 {
+    std::cout << "\n=================Use of Header File=================\n";
     int result = add(10, 5);
     std::cout << "Result: " << result << std::endl;
+
+    std::cout << "\n=================User defined macro=================\n";
+    printf("%.2f", AREA(3, 4));
+
+    std::cout << "\n\n=================Predefined Macros=================\n";
+    printf("Line number is: %d\n", __LINE__);
+    printf("File name of this program is: %s\n", __FILE__);
+    printf("Program Compilation Date: %s\n", __DATE__);
     return 0;
 }
 

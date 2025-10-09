@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20251009-0901-Experimental"
+	Name="LAPTOP-5BA4FM45"
+	Generator="ctest-4.1.2"
+	CompilerName="C:/msys64/ucrt64/bin/g++.exe"
+	CompilerVersion="14.2.0"
+	OSName="Windows"
+	Hostname="LAPTOP-5BA4FM45"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="4"
+	ModelName="AMD Ryzen 7 7735HS with Radeon Graphics"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="17464"
+	TotalPhysicalMemory="13624"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3201"
+	>
+	<Testing>
+		<StartDateTime>Oct 09 15:14 Sri Lanka Standard Time</StartDateTime>
+		<StartTestTime>1760003091</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 09 15:14 Sri Lanka Standard Time</EndDateTime>
+		<EndTestTime>1760003091</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
