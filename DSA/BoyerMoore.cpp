@@ -6,29 +6,20 @@ class Solution {
 public:
     int majorityElement(std::vector<int>& nums) {
         int n = nums.size();
-        int candidate = nums[0];
-        int count = 1;
-        for (int i = 1; i<n; ++i)
-        {
-            if (nums[i] == candidate)
-                ++count;
-            else
-            {
-                --count;
-                if (count == 0)
-                {
-                    candidate = nums[i];
-                    count = 1;
-                }
-            }
-        }
-        // Second pass to verify majority
-        count = 0;
+        int candidate = 0;
+        int count = 0;
+        
         for (int num : nums)
+        {
+            if (count == 0)
+                candidate = num;
             if (num == candidate)
-                ++count;
+                count++;
+            else
+                count--;
+        }
 
-        return (count > nums.size() / 2) ? candidate : -1; // Return -1 if no majority
+        return candidate;
     }
     
 };
