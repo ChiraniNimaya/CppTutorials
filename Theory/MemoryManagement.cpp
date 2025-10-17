@@ -55,7 +55,7 @@ int main(){
     //Reference
     std::cout << "\n=================Reference=================\n";
     std::string city = "Paris";
-    std::string& ref = city;
+    std::string* ref = &city;
     std::cout << "Variable Value: " << city << std::endl;
     std::cout << "Reference Value: " << ref << std::endl;
 

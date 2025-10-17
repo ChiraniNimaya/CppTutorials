@@ -11,10 +11,11 @@ class Shape{
         }
 };
 class Triangles : public Shape{};
-class AcuteTriangles : public Triangles{
+class AcuteTriangles : public Triangles{ //Multi level inheritance
     //inherits showArea
     };
-
+//Multiple inheritance- A class can also be derived from more than one base class, using a comma-separated list
+//(Allows in C++)
 
 //Runtime Polymorphism
 class Polygon{
@@ -100,30 +101,34 @@ class Student{
 
 int main()
 {
-    //Inheritance
+    std::cout << "\n=================Inheritance=================\n";
     AcuteTriangles acuteTriangles;
     acuteTriangles.showArea();
 
-    //Runtime Polymorphism
+    std::cout << "\n=================Runtime Polymorphism=================\n";
     Polygon polygon;
     Triangle triangle;
     Rectangle rectangle;
+    Triangle tr;
     Polygon* poly1 = &polygon;
     Polygon* poly2 = &triangle;
     Polygon* poly3 = &rectangle;
     poly1->setValues(2,3);
     poly2->setValues(4,5); //will call parent class fn
     poly3->setValues(5,6);
+    tr.setValues(7,8); //will call child class fn
     std::cout << poly1->getArea() << std::endl;
     std::cout << poly2->getArea() << std::endl; //will call child class fn
     std::cout << poly3->getArea() << std::endl;
+    std::cout << tr.getArea() << std::endl; //will call child class fn
 
-    //Compile time Polymorphism
-    //Function overloading
+    std::cout << "\n=================Compile time Polymorphism=================\n";
+    std::cout << "\nFunction overloading=================\n";
     Addition addition;
     std::cout << addition.add(1,2) << std::endl;
     std::cout << addition.add(1.1,2.2) << std::endl;
-    //Operator overloading'
+
+    std::cout << "\nOperator overloading=================\n";
     Complex c1(1,2);       // Direct initialization 
     Complex c2 = Complex(3,1);  // Copy initialization 
     Complex c3{4,5};       // Uniform initialization (modern C++) 
