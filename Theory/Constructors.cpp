@@ -71,7 +71,7 @@ private:
 
 public:
     // Move Constructor
-    MyClass(int &&a) : b(std::move(a)) {
+    MyClass(int &&a) : b(std::move(a)) { //&&a is rvalue reference - reference to a temperory object
         std::cout << "Move constructor called!" << std::endl;
     }
 

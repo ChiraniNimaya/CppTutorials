@@ -4,14 +4,31 @@ using namespace std;
 class A {
 public:
     int value;
+    virtual void display(){
+        std::cout << "A" << std::endl;
+    }
 };
 
-class B : virtual public A { };  // Virtual Inheritance
-class C : virtual public A { };  // Virtual Inheritance
+class B : virtual public A { // Virtual Inheritance
+    public: 
+    void display() override {
+        std::cout << "B" << std::endl;
+    }
+};  
+class C : virtual public A { // Virtual Inheritance
+     public: 
+    void display() override {
+        std::cout << "C" << std::endl;
+    }
+     };  
 //You’re telling the compiler:
     //Only keep one shared A no matter how many times it’s inherited through virtual paths.”
 
-class D : public B, public C { };  // Resolves the Diamond Problem
+class D : public B, public C {
+    void display() override {
+        B::display();  // or C::display();  // choose one
+    }
+ };  // Resolves the Diamond Problem
 
 int main() {
     D obj;
