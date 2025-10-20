@@ -1,0 +1,10 @@
+^C:\USERS\CHIRANI\REPOS\CPPTUTORIALS\VALGRINDDEMO\BUILD\CMAKEFILES\2300CA235243C7DA550F256B1B8C9630\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Chirani/repos/CppTutorials/ValgrindDemo -BC:/Users/Chirani/repos/CppTutorials/ValgrindDemo/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Chirani/repos/CppTutorials/ValgrindDemo/build/ValgrindDemo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

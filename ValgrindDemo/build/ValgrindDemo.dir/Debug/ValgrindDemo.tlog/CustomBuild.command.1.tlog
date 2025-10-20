@@ -1,0 +1,10 @@
+^C:\USERS\CHIRANI\REPOS\CPPTUTORIALS\VALGRINDDEMO\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Chirani/repos/CppTutorials/ValgrindDemo -BC:/Users/Chirani/repos/CppTutorials/ValgrindDemo/build --check-stamp-file C:/Users/Chirani/repos/CppTutorials/ValgrindDemo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
