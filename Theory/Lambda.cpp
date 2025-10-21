@@ -5,6 +5,8 @@
 //lambda => [](){}
 //[captures](parameters){fn body}
 //if capture is given by value, its read only, if its given by reference, the latest value will be given and it can be altered
+//[=] capture all by value
+//[&] capture all by reference
 
 int main()
 {
@@ -12,7 +14,7 @@ int main()
     int sum = 0;
     int doNotPrintNumber = 4;
 
-    std::for_each(numbers.begin(), numbers.end(), [&](int x) //& means capture all by reference
+    std::for_each(numbers.begin(), numbers.end(), [&](int x) 
     {
         if (x != doNotPrintNumber)
             std::cout << x <<std::endl;
